@@ -69,15 +69,19 @@ async def start(bot, update):
         reply_to_message_id=update.message_id
     )
     
- @pyrogram.Client.on_message(pyrogram.Filters.command(["channel"]))
-async def start(bot, update):
+ #@pyrogram.Client.on_message(pyrogram.Filters.command(["channel"]))
+#async def start(bot, update):
     # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/channel")
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.CHANNEL_TEXT,
-        reply_to_message_id=update.message_id
-    )
+   # TRChatBase(update.from_user.id, update.text, "/channel")
+   # await bot.send_message(
+   #     chat_id=update.chat.id,
+     #   text=Translation.CHANNEL_TEXT,
+    #    reply_to_message_id=update.message_id
+   # )
+    
+ @pyrogram.Client.on_message(Filters.command("channel"))
+async def start(client, message):
+    await message.reply_text(f"These are our channels under @filimhouse: \n@FH_SOUTH\n@FH_HEVC\n@FH_OLD\n@FH_NEW\n@FH_DUBBED\n@FH_WORLD", True)
 
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["upgrade"]))
