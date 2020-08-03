@@ -1,4 +1,14 @@
 class Translation(object):
+    
+    CHANNEL_TEXT = """ Our complete channels under @filimhouse :
+    1.  @FH_SOUTH
+    2.  @FH_HEVC
+    3.  @FH_OLD
+    4.  @FH_WORLD
+    5.  @FH_DUBBED
+    6.  @FH_NEW"""
+    
+    
     START_TEXT = """Hello,
 This is a Telegram URL Upload Bot!
 
