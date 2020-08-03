@@ -72,7 +72,7 @@ async def start(bot, update):
  @pyrogram.Client.on_message(pyrogram.Filters.command(["channel"]))
 async def start(bot, update):
     # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/start")
+    TRChatBase(update.from_user.id, update.text, "/channel")
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.CHANNEL_TEXT,
