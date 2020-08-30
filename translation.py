@@ -47,9 +47,9 @@ Expires on: 1÷0"""
 2. Send Custom Thumbnail.
 3. Select the desired mode ☟
    SVideo   - Give Video    + Screenshots
-   DFile    - Give File     + Screenshots
-   Video    - Give  video 
-   DFile    - Give  File 
+   DFile      - Give File     + Screenshots
+   Video     - Give  video 
+   DFile      - Give  File 
 Send /me to know current plan details
 Supports: @Fh_Bots + @filimhouseadmin"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
